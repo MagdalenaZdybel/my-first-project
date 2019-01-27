@@ -8,11 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-first-project-in-Angular';
 
-  getAge(){
-    return 2019 - this.mine.age;
+    getAge(){
+      return 2019 - this.mine.age;
+    }
+  getAgeOne(){
+    return (new Date()).getFullYear() - this.mine.age;
+  }
+  get getAgeTwo(){
+    return (new Date()).getFullYear() - this.mine.age;
   }
 
-  mine= {
+
+  mine = {
     name: 'Magda',
     age: 1978,
     company:{

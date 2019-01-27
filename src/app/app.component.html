@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
     <h1>
         Welcome to {{ title }}!
@@ -11,9 +10,15 @@
     <p>
         Age: {{ 2019 - mine.age }}
     </p>
-
-    <p>wiek innym sposobem: {{ getAge() }}</p>
     <p>
-        {{mine.company.name}}
+        Age - kolejny sposób wyświetlenia: {{ getAgeOne() }}
+    </p>
+    <p>
+        wiek innym sposobem: {{ getAge() }}
+    </p>
+    <p>
+        company name: {{mine.company.name}}
+    </p>
+    <p>ukrycie funkcji - dla Angulara zwykłe property {{ getAgeTwo }}
     </p>
 </div>
